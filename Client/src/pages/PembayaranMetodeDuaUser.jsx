@@ -132,7 +132,7 @@ export default function PembayaranMetodeDuaUser() {
             <p className="mt-4 custom-font-3">
               Klik konfirmasi pembayaran untuk mempercepat proses pengecekan
             </p>
-            <Link className="btn btn-success font-weight-bold w-100 mb-4 custom-font-4">
+            <Link className="btn btn-success font-weight-bold w-100 mb-4 custom-font-4" to={"/pembayaran-dua-terakhir-user"}>
               Konfirmasi Pembayaran
             </Link>
           </div>

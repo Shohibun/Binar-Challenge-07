@@ -196,7 +196,7 @@ export default function PembayaranMetodeSatuUser() {
               </div>
             </div>
 
-            <Link className="btn btn-success font-weight-bold w-100 mb-4 custom-font-4">Bayar</Link>
+            <Link className="btn btn-success font-weight-bold w-100 mb-4 custom-font-4" to={"/pembayaran-dua-user"}>Bayar</Link>
           </div>
         </div>
       </div>

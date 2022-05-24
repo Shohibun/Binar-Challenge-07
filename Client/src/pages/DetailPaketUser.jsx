@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faClock,
@@ -211,12 +212,12 @@ export default function DetailPaket() {
                       </div>
                       <div class="col-md-12">
                         <span>
-                          <a
-                            href="/hasil-pencarian-user"
+                          <Link
+                            href="/pembayaran-satu-user"
                             class="btn btn-success w-100 py-2 text-center"
                           >
                             Pilih Mobil
-                          </a>
+                          </Link>
                         </span>
                       </div>
                     </div>
@@ -225,9 +226,9 @@ export default function DetailPaket() {
               </div>
             </div>
             <div class="d-flex justify-content-center mt-4">
-              <a href="/hasil-pencarian-user" class="btn btn-success w-25 py-2 text-center">
+              <Link href="/pembayaran-satu-user" class="btn btn-success w-25 py-2 text-center">
                 Lanjutkan Pembayaran
-              </a>
+              </Link>
             </div>
           </div>
         </>

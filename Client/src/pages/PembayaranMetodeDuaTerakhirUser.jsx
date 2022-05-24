@@ -181,7 +181,7 @@ export default function PembayaranMetodeDuaUser() {
               </p>
             </div>
 
-            <Link className="btn btn-success font-weight-bold w-100 mb-4 mt-4 custom-font-4">
+            <Link className="btn btn-success font-weight-bold w-100 mb-4 mt-4 custom-font-4" to={"/pembayaran-tiga-user"}>
               Upload
             </Link>
           </div>

@@ -50,24 +50,6 @@ export default function SignIn(props) {
 
     form.current.validateAll();
 
-    // login(email, password).then(() =>{ 
-    //   setLoading(false);
-    //   if (isLoggedIn && user?.roles[0] === 'ROLE_USER') {
-    //     props.history.push("/dashboard-user");
-    //     window.location.reload();
-    //     // location.assign('https://www.javascripttutorial.net/');
-    //   } else if (isLoggedIn && user?.roles[0] === 'ROLE_ADMIN') {
-    //     props.history.push("/dashboard-admin");
-    //     window.location.reload();
-    //     // location.assign('https://www.javascripttutorial.net/');
-    //   }
-    // })
-
-    // Loginnya berhasil sama authorizationnya tapi perlu di refresh dulu 
-    // Jadi kayak login pertama datanya kesimpen di localStorage tapi itu loading
-    // Lah kalau direfresh terus login lagi pakek akun yang sama itu bisa masuk
-    // Kalau akun user nanti menuju ke dashboar user, akun admin menuju ke dashboar admin
-    
     if (checkBtn.current.context._errors.length === 0) {
       dispatch(login(email, password))
         .then(() => {
