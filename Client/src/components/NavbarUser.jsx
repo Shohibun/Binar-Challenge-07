@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useCallback, useEffect } from "react";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { logout } from "../actions/auth";
 import EventBus from "../common/EventBus";
 
@@ -51,9 +52,9 @@ export default function NavbarUser() {
             <a className="nav-item nav-link ml-2 pl-3 pr-3 custom-user-cursor" id="faq">
               FAQ
             </a>
-            <a className="nav-item nav-link ml-3 bg-success text-white font-weight-bold rounded pl-3 pr-3 custom-custom-user-cursor" href="/" onClick={logOut}>
+            <Link className="nav-item nav-link ml-3 bg-success text-white font-weight-bold rounded pl-3 pr-3 custom-custom-user-cursor" to="/" onClick={logOut}>
               Logout
-            </a>
+            </Link>
           </div>
         </div>
       </div>

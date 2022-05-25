@@ -6,6 +6,7 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import { useDispatch } from "react-redux";
 import { logout } from "../actions/auth";
 import EventBus from "../common/EventBus";
+import { Link } from "react-router-dom";
 
 export default function NavbarAdmin() {
   const dispatch = useDispatch();
@@ -58,12 +59,12 @@ export default function NavbarAdmin() {
         <span className="custom-account">U</span>
         &nbsp;&nbsp;
         <DropdownButton variant="light" title="Unis Badri">
-          <a className="dropdown-item" href="#">
+          <Link className="dropdown-item" to="#">
             Edit Profile
-          </a>
-          <a className="dropdown-item" href="/" onClick={logOut}>
+          </Link>
+          <Link className="dropdown-item" to="/" onClick={logOut}>
             Logout
-          </a>
+          </Link>
         </DropdownButton>
       </div>
     </nav>
