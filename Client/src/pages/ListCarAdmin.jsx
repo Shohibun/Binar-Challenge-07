@@ -10,6 +10,7 @@ import {
 import Axios from "axios";
 import img from "../images/Infinity-1s-200px.svg";
 import ModalImage from "react-modal-image";
+import { Link } from "react-router-dom";
 
 export default function ListCar() {
   const [dataMobilAdmin, setDataMobilAdmin] = useState([]);
@@ -46,9 +47,9 @@ export default function ListCar() {
 
       <div className="d-flex justify-content-between">
         <h6 className="font-weight-bold custom-font-2">List Car</h6>
-        <a className="btn text-white custom-add" href="/add-new-car-admin">
+        <Link className="btn text-white custom-add" to="/add-new-car-admin">
           + &nbsp; Add New Car
-        </a>
+        </Link>
       </div>
 
       <div className="d-flex justify-content-start mb-4 mt-2">
