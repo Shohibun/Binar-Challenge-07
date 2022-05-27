@@ -11,10 +11,23 @@ import Axios from "axios";
 import img from "../images/Infinity-1s-200px.svg";
 import ModalImage from "react-modal-image";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import createHistory from 'history/createBrowserHistory';
 
 export default function ListCar() {
   const [dataMobilAdmin, setDataMobilAdmin] = useState([]);
   const [loading, setLoading] = useState(false);
+  const alert = useLocation();
+  console.log("alert:", alert.state)
+
+  const history = createHistory();
+  if (
+    history.location?.state?.status
+  ) {
+    const state = { ...history.location.state };
+    delete state.status;
+    history.replace({ ...history.location, state });
+  }
 
   const getData = async () => {
     setLoading(true);
@@ -45,6 +58,10 @@ export default function ListCar() {
         </div>
       </div>
 
+      {
+        alert?.state?.status ? <div className="mx-auto bg-success text-center text-white py-2 border rounded w-25">Data Berhasil Disimpan</div> : ""
+      }
+      
       <div className="d-flex justify-content-between">
         <h6 className="font-weight-bold custom-font-2">List Car</h6>
         <Link className="btn text-white custom-add" to="/add-new-car-admin">

@@ -39,11 +39,11 @@ export default function SidebarDashboard() {
                     </div>
                     <div className="col-12 custom-pad">
                         <br/><br/>
-                        <div class="m-auto custom-mar">
-                            <div class="text-left">
-                                <h6 class="pl-3 custom-font-3">DASHBOARD</h6>
-                                <div class="custom-menu-active mt-5">
-                                    <p class="p-2 pl-3 font-weight-bold custom-font-3">Dashboard</p>
+                        <div className="m-auto custom-mar">
+                            <div className="text-left">
+                                <h6 className="pl-3 custom-font-3">DASHBOARD</h6>
+                                <div className="custom-menu-active mt-5">
+                                    <p className="p-2 pl-3 font-weight-bold custom-font-3">Dashboard</p>
                                 </div>
                             </div>
                         </div>
