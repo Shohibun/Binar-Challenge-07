@@ -1,3 +1,6 @@
 "email": "adminfix@gmail.com",
 "password": "superadminfix"
 
+"email": "shohibun@gmail.com",
+"password": "123456789"
+
